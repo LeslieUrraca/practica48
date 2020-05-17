@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+var vec=[];
+var f;
+var valor;
+do {
+valor=prompt('Escribe los numeros de manera desorganizada y el programa te los organizara(0 para finalizar):','');
+valor=parseInt(valor);
+if (valor<100)
+{
+vec.unshift(valor);
+}
+else
+{
+vec.push(valor);
+}
+} while (valor!=0);
+vec.shift();
+for(f=0;f<vec.length;f++)
+{
+document.write(vec[f]+'<br>');
+}
+</script>
+
+</body>
+</html>
